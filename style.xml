@@ -1,0 +1,48 @@
+<Map background-color="white" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +no_defs">
+	<Style name="boundary">
+		<Rule>
+			<PolygonSymbolizer fill="#f2eff9" />
+			<LineSymbolizer stroke="rgb(50%,50%,50%)" stroke-width="0.1" />
+		</Rule>
+	</Style>
+    <Style name="building">
+        <Rule>
+            <PolygonSymbolizer fill="rgb(70%,0%,0%)"/>
+            <LineSymbolizer stroke="red" stroke-width="0.1" />
+        </Rule>
+    </Style>
+    <Style name="raster">
+        <Rule>
+            <RasterSymbolizer>
+                <RasterColorizer>
+                    <stop value="18.222618103027" color="blue"/>
+                    <stop value="1722036.5" color="green"/>
+                </RasterColorizer>
+            </RasterSymbolizer>
+        </Rule>
+    </Style>
+    <!--
+	<Layer name="boundary" srs="+proj=utm +zone=18 +ellps=GRS80 +datum=NAD83 +units=m +no_defs">
+		<StyleName>boundary</StyleName>
+		<Datasource>
+			<Parameter name="type">shape</Parameter>
+			<Parameter name="file">Spatial_Data/DumBndryLn.shp</Parameter>
+		</Datasource>
+	</Layer>
+	<Layer name="buildings" srs="+proj=utm +zone=18 +ellps=GRS80 +datum=NAD83 +units=m +no_defs">
+		<StyleName>building</StyleName>
+		<Datasource>
+			<Parameter name="type">shape</Parameter>
+			<Parameter name="file">Spatial_Data/DumfSolEngy.shp</Parameter>
+		</Datasource>
+	</Layer>
+-->
+	<Layer name="solar" srs="+proj=utm +zone=18 +ellps=GRS80 +datum=NAD83 +units=m +no_defs">
+        <StyleName>raster</StyleName>
+		<Datasource>
+			<Parameter name="type">gdal</Parameter>
+			<Parameter name="file">Spatial_Data/SolarRaster.tif</Parameter>
+            <Parameter name="nodata">-3.40282299999999995e+38</Parameter>
+		</Datasource>
+	</Layer>
+</Map>

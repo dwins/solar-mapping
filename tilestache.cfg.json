@@ -1,0 +1,31 @@
+{
+  "cache": {"name": "Test"},
+  "layers": {
+    "viz": {
+        "provider": {"name": "mapnik", "mapfile": "style.xml"},
+        "projection": "spherical mercator",
+        "preview": 
+        {
+            "lat": 38.5666,
+            "lon": -77.3213,
+            "zoom": 14,
+            "ext": "png"
+        }
+    },
+    "data": {
+        "provider": {
+            "name" : "vector",
+            "driver": "shapefile",
+            "parameters": {
+                "file": "Spatial_Data/DumfSolEngy.shp" 
+            }
+        },
+        "preview": {
+            "lat": 38.5666,
+            "lon": -77.3213,
+            "zoom": 14,
+            "ext": "geojson"
+        }
+    }
+  }
+}
