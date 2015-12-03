@@ -168,3 +168,7 @@ input[type="radio"], input[type="checkbox"] {
     display: none !important;
   }
 }
+/* Fix Icon locations */
+.leaflet-pelias-search-icon {
+    background-image: url('../img/search.png');
+}

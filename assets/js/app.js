@@ -567,3 +567,9 @@ if (!L.Browser.touch) {
 } else {
   L.DomEvent.disableClickPropagation(container);
 }
+// Mapzen Geocoder API Key
+
+L.control.geocoder('search-1Ez20nE', {
+  pointIcon: 'http://pelias.github.io/leaflet-geocoder/dist/images/point_icon.png',
+  polygonIcon: 'http://pelias.github.io/leaflet-geocoder/dist/images/polygon_icon.png'
+}).addTo(map);
