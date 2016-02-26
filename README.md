@@ -10,3 +10,8 @@ An easy one is built-in to Python on Mac and Ubuntu:
    
 After this the site will be visible at http://localhost:8080/
 
+- Postgis http://postgis.net/
+- Leaflet http://leafletjs.com/
+- Bootstrap http://getbootstrap.com/
+- Bootleaf https://github.com/bmcbride/bootleaf
+- Tilestache http://tilestache.org/
